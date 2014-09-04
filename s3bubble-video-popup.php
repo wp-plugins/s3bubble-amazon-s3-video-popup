@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: S3Bubble Video Popup
+Plugin Name: S3Bubble Featured Video Advertising Popup
 Plugin URI: https://www.s3bubble.com/
 Description: S3Bubble offers simple, secure media streaming from Amazon S3 to WordPress and adding your very own adverts. In just 4 simple steps. 
 Version: 0.1
