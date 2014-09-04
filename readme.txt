@@ -1,4 +1,4 @@
-﻿=== S3Bubble Amazon S3 Video And Audio Streaming Service ===
+﻿=== S3Bubble Featured Video Advertising Popup ===
 Contributors: Samuel East
 Donate link: https://s3bubble.com
 Tags: S3Bubble, AmazonS3, Amazon S3, HTML5 Player, Video, VideoPlayer, MediaPlayer, MediaStreaming, Media-Streaming, Media Streaming, VideoStreaming, Video-streaming, Video Streaming, MediaStream, Advert, Advertising
