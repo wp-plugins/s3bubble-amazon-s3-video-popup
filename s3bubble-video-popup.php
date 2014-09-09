@@ -243,7 +243,7 @@ if (!class_exists("s3bubble_video_popup")) {
 										</h3>
 										<p>Add a popup promotional or advertising video.</p>
 										<a class="button button-s3bubble" href="https://wordpress.org/plugins/s3bubble-amazon-s3-video-popup/" target="_blank">DOWNLOAD</a>
-										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=GcTLSOvddaM" target="_blank">VIDEO</a>
+										<a class="button button-s3bubble" href="https://www.youtube.com/watch?v=GcTLSOvddaM" target="_blank">VIDEO</a>
 								</li>
 								<li>
 			
@@ -254,7 +254,7 @@ if (!class_exists("s3bubble_video_popup")) {
 										</h3>
 										<p>Add adverts before your videos & skip time.</p>
 										<a class="button button-s3bubble" href="https://wordpress.org/plugins/s3bubble-amazon-s3-html-5-video-with-adverts/" target="_blank">DOWNLOAD</a>
-										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=z3DZ1fpXR0I" target="_blank">VIDEO</a>
+										<a class="button button-s3bubble" href="https://www.youtube.com/watch?v=z3DZ1fpXR0I" target="_blank">VIDEO</a>
 								</li>
 								<li>
 			
@@ -264,7 +264,7 @@ if (!class_exists("s3bubble_video_popup")) {
 										</h3>
 										<p>Stream media directly onto your wordpress blogs.</p>
 										<a class="button button-s3bubble" href="https://wordpress.org/plugins/s3bubble-amazon-s3-audio-streaming/" target="_blank">DOWNLOAD</a>
-										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=EyBTpJ9GJCw" target="_blank">VIDEO</a>
+										<a class="button button-s3bubble" href="https://www.youtube.com/watch?v=EyBTpJ9GJCw" target="_blank">VIDEO</a>
 								</li>
 								<li>
 										<img src="https://s3bubble.com/wp-content/uploads/2014/07/s3backup.png" alt="S3Bubble wordpress backup plugin" />
@@ -273,7 +273,41 @@ if (!class_exists("s3bubble_video_popup")) {
 										</h3>
 										<p>Store your data securely and ensure you website is safe.</p>
 										<a class="button button-s3bubble" href="http://wordpress.org/plugins/s3bubble-amazon-s3-backup/" target="_blank">DOWNLOAD</a>
-										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=niqugoI8gis" target="_blank">VIDEO</a>
+										<a class="button button-s3bubble" href="https://www.youtube.com/watch?v=niqugoI8gis" target="_blank">VIDEO</a>
+								</li>
+							</ul>        
+						</div> 
+					</div>
+					<div class="postbox">
+						<h3 class="hndle">S3Bubble Mobile Apps</h3>
+						<div class="inside">
+							<ul class="s3bubble-adverts">
+								<li>
+										<img src="https://s3bubble.com/wp-content/themes/s3audible/img/plugins/iphoneapp.jpg" alt="S3Bubble iPhone" /> 
+										<h3>
+											iPhone Mobile App
+										</h3>
+										<p>Record Manage Watch Download Share.</p>
+										<a class="button button-s3bubble" href="https://itunes.apple.com/us/app/s3bubble/id720256052?ls=1&mt=8" target="_blank">GET THE APP</a>
+								</li>
+								<li>
+			
+										<img src="https://s3bubble.com/wp-content/themes/s3audible/img/plugins/androidapp.png" alt="S3Bubble Android" /> 
+										<h3>
+											Android Mobile App
+											
+										</h3>
+										<p>Record Manage Watch Download Share.</p>
+										<a class="button button-s3bubble" href="https://play.google.com/store/apps/details?id=com.s3bubbleAndroid" target="_blank">GET THE APP</a>
+								</li>
+								<li>
+			
+										<img src="https://s3bubble.com/wp-content/themes/s3audible/img/plugins/flix.png" alt="S3Bubble Flix" /> 
+										<h3>
+											S3Bubble Flix Android
+										</h3>
+										<p>Create your own personal video network.</p>
+										<a class="button button-s3bubble" href="https://play.google.com/store/apps/details?id=com.s3bubbleflixandroid" target="_blank">GET THE APP</a>
 								</li>
 							</ul>        
 						</div> 
