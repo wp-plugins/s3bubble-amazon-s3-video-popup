@@ -3,7 +3,7 @@
 Plugin Name: S3Bubble Featured Video Advertising Popup
 Plugin URI: https://www.s3bubble.com/
 Description: S3Bubble offers simple, secure media streaming from Amazon S3 to WordPress and adding your very own adverts. In just 4 simple steps. 
-Version: 0.1
+Version: 0.2
 Author: S3Bubble
 Author URI: https://s3bubble.com/
 License: GPL2
@@ -138,8 +138,6 @@ if (!class_exists("s3bubble_video_popup")) {
 		function s3bubble_video_popup_css_admin(){
 			wp_register_style( 's3bubble.video.popup.admin', plugins_url('assets/css/s3bubble.video.popup.admin.css', __FILE__) );
 			wp_enqueue_style('s3bubble.video.popup.admin');
-			wp_register_style( 's3bubble.video.popup.plugin', plugins_url('assets/css/s3bubble.video.popup.plugin.css', __FILE__) );
-			wp_enqueue_style('s3bubble.video.popup.plugin');
 		}
 		
         /*
@@ -230,48 +228,88 @@ if (!class_exists("s3bubble_video_popup")) {
 		?>
 		<div class="wrap">
 			<div id="icon-options-general" class="icon32"></div>
-			<h2>S3Bubble Amazon S3 Popup Video</h2>
+			<h2>S3Bubble Featured Video Advertising Popup</h2>
+			<div id="message" class="updated fade"><p>Please sign up for a S3Bubble account at <a href="https://s3bubble.com" target="_blank">https://s3bubble.com</a></p></div>
 			<div class="metabox-holder has-right-sidebar">
-				<div class="inner-sidebar" style="width:50%">
+				<div class="inner-sidebar" style="width:40%">
 					<div class="postbox">
-						<h3><span>PLEASE WATCH TUTORIAL VIDEO</span></h3>
+						<h3 class="hndle">S3Bubble Plugins</h3>
 						<div class="inside">
-							<iframe width="100%" height="315" src="//www.youtube.com/embed/GcTLSOvddaM" frameborder="0" allowfullscreen></iframe>
+							<ul class="s3bubble-adverts">
+								<li>
+										<img src="https://s3bubble.com/wp-content/uploads/2014/07/s3streamin.png" alt="S3Bubble wordpress plugin" /> 
+										<h3>
+											Video Popup WP Plugin
+										</h3>
+										<p>Add a popup promotional or advertising video.</p>
+										<a class="button button-s3bubble" href="https://wordpress.org/plugins/s3bubble-amazon-s3-video-popup/" target="_blank">DOWNLOAD</a>
+										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=GcTLSOvddaM" target="_blank">VIDEO</a>
+								</li>
+								<li>
+			
+										<img src="https://s3bubble.com/wp-content/uploads/2014/07/s3streamin.png" alt="S3Bubble wordpress plugin" /> 
+										<h3>
+											Video Adverts WP Plugin 
+											
+										</h3>
+										<p>Add adverts before your videos & skip time.</p>
+										<a class="button button-s3bubble" href="https://wordpress.org/plugins/s3bubble-amazon-s3-html-5-video-with-adverts/" target="_blank">DOWNLOAD</a>
+										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=z3DZ1fpXR0I" target="_blank">VIDEO</a>
+								</li>
+								<li>
+			
+										<img src="https://s3bubble.com/wp-content/uploads/2014/07/s3streamin.png" alt="S3Bubble wordpress plugin" /> 
+										<h3>
+											Wordpress Media Plugin
+										</h3>
+										<p>Stream media directly onto your wordpress blogs.</p>
+										<a class="button button-s3bubble" href="https://wordpress.org/plugins/s3bubble-amazon-s3-audio-streaming/" target="_blank">DOWNLOAD</a>
+										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=EyBTpJ9GJCw" target="_blank">VIDEO</a>
+								</li>
+								<li>
+										<img src="https://s3bubble.com/wp-content/uploads/2014/07/s3backup.png" alt="S3Bubble wordpress backup plugin" />
+										<h3>
+											Free WP Backup Plugin
+										</h3>
+										<p>Store your data securely and ensure you website is safe.</p>
+										<a class="button button-s3bubble" href="http://wordpress.org/plugins/s3bubble-amazon-s3-backup/" target="_blank">DOWNLOAD</a>
+										<a class="button button-s3bubble" style="float: right;" href="https://www.youtube.com/watch?v=niqugoI8gis" target="_blank">VIDEO</a>
+								</li>
+							</ul>        
 						</div> 
 					</div>
-
 				</div>
 				<div id="post-body">
-					<div id="post-body-content" style="margin-right: 51%;">
+					<div id="post-body-content" style="margin-right: 41%;">
 						<div class="postbox">
-							<h3><span>Please sign up for an account at <a href="https://s3bubble.com/auth/?action=register&utm_source=wordpress&utm_medium=link&utm_campaign=pluginpage" target="_blank">https://s3bubble.com</a> you will need to use the username and email you signed up with.</span></h3>
+							<h3 class="hndle">Fill in details below if stuck please <a class="button button-s3bubble" style="float: right;margin: -5px -10px;" href="https://www.youtube.com/watch?v=GcTLSOvddaM" target="_blank">Watch Video</a></h3>
 							<div class="inside">
-								<form action="" method="post" id="isd-config" style="overflow: hidden;">
+								<form action="" method="post" id="s3bubble-video-popup-form" style="overflow: hidden;">
 								    <table class="form-table">
 								      <?php if (function_exists('wp_nonce_field')) { wp_nonce_field('isd-updatesettings'); } ?>
 								      <tr>
-								        <th scope="row" valign="top"><label for="s3bubble_video_popup_key">S3Bubble Video ID:</label></th>
+								        <th scope="row" valign="top"><label for="s3bubble_video_popup_key">S3Bubble Video ID *</label></th>
 								        <td><input type="text" name="s3bubble_video_popup_key" id="s3bubble_video_popup_key" class="regular-text" value="<?php echo $s3bubble_video_popup_key; ?>"/>
 								        	<br />
 								        	<span class="description">Video ID can be found in S3Bubble admin.</span>
 								        </td>
 								      </tr>  
 								      <tr>
-								        <th scope="row" valign="top"><label for="s3bubble_video_popup_button_text">Button Text:</label></th>
+								        <th scope="row" valign="top"><label for="s3bubble_video_popup_button_text">Button Text *</label></th>
 								        <td><input type="text" name="s3bubble_video_popup_button_text" id="s3bubble_video_popup_button_text" class="regular-text" value="<?php echo $s3bubble_video_popup_button_text; ?>"/>
 								        	<br />
 								        	<span class="description">Text for the button</span>
 								        </td>
 								      </tr> 
 								      <tr>
-								        <th scope="row" valign="top"><label for="s3bubble_video_popup_width">Video Width:</label></th>
+								        <th scope="row" valign="top"><label for="s3bubble_video_popup_width">Video Width *</label></th>
 								        <td><input type="text" name="s3bubble_video_popup_width" id="s3bubble_video_popup_width" class="regular-text" value="<?php echo $s3bubble_video_popup_width; ?>"/>
 								        	<br />
 								        	<span class="description">Do not add px</span>
 								        </td>
 								      </tr>
 								      <tr>
-								        <th scope="row" valign="top"><label for="s3bubble_button_position">Button Position:</label></th>
+								        <th scope="row" valign="top"><label for="s3bubble_button_position">Button Position *</label></th>
 								        <td><select name="s3bubble_button_position" id="s3bubble_button_position">
 								            <option value="<?php echo $s3bubble_button_position; ?>"><?php echo $s3bubble_button_position; ?></option>
 								            <option value="left">left</option>
@@ -282,14 +320,14 @@ if (!class_exists("s3bubble_video_popup")) {
 								          <span class="description">Change button position.</p></td>
 								      </tr>
 								      <tr>
-								        <th scope="row" valign="top"><label for="s3bubble_video_popup_link">Video Link:</label></th>
+								        <th scope="row" valign="top"><label for="s3bubble_video_popup_link">Video Link</label></th>
 								        <td><input type="text" name="s3bubble_video_popup_link" id="s3bubble_video_popup_link" class="regular-text" value="<?php echo $s3bubble_video_popup_link; ?>"/>
 								        	<br />
 								        	<span class="description">Optional leave blank for no link</span>
 								        </td>
 								      </tr>
 								      <tr>
-								        <th scope="row" valign="top"><label for="s3bubble_video_popup_link_text">Video Link Text:</label></th>
+								        <th scope="row" valign="top"><label for="s3bubble_video_popup_link_text">Video Link Text</label></th>
 								        <td><input type="text" name="s3bubble_video_popup_link_text" id="s3bubble_video_popup_link_text" class="regular-text" value="<?php echo $s3bubble_video_popup_link_text; ?>"/>
 								        	<br />
 								        	<span class="description">Video link text url must be supplied</span>
@@ -297,9 +335,8 @@ if (!class_exists("s3bubble_video_popup")) {
 								      </tr>  
 								    </table>
 								    <br/>
-								    <span class="description">To remove branding please upgrade your account. <a href="https://s3bubble.com/pricing/" target="_blank">Upgrade</a></p>
 								    <span class="submit" style="border: 0;">
-								    <input type="submit" name="submit" class="button button-primary button-hero" value="Save Settings" />
+								    <button type="submit" name="submit" class="button button-s3bubble button-hero" >Save Settings</button>
 								    </span>
 								  </form>
 							</div><!-- .inside -->
