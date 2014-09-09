@@ -40,7 +40,7 @@ if (!class_exists("s3bubble_video_popup")) {
 		public  $s3bubble_button_position          = 'bottom';
 		public  $s3bubble_video_popup_link         = 'https://s3bubble.com/';
 		public  $s3bubble_video_popup_link_text    = 'S3Bubble';
-		public  $version                           = 1;
+		public  $version                           = 2;
 		
 		/*
 		 * Constructor method to intiat the class
@@ -136,7 +136,7 @@ if (!class_exists("s3bubble_video_popup")) {
 		* @none
 		*/ 
 		function s3bubble_video_popup_css_admin(){
-			wp_register_style( 's3bubble.video.popup.admin', plugins_url('assets/css/s3bubble.video.popup.admin.css', __FILE__) );
+			wp_register_style( 's3bubble.video.popup.admin', plugins_url('assets/css/s3bubble.video.popup.admin.css', __FILE__), array(), $this->version );
 			wp_enqueue_style('s3bubble.video.popup.admin');
 		}
 		
