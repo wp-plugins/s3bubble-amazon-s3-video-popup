@@ -3,7 +3,7 @@ Contributors: Samuel East
 Donate link: https://s3bubble.com
 Tags: S3Bubble, AmazonS3, Amazon S3, HTML5 Player, Video, Popup, MediaPlayer, Lightbox, Media-Streaming, Media Streaming, VideoStreaming, Video-streaming, Video Streaming, MediaStream, Advert, Advertising
 Requires at least: 2.0
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
