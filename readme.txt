@@ -1,7 +1,7 @@
-﻿=== S3Bubble Featured Video Advertising Popup ===
+﻿=== Featured Video Advertising Popup ===
 Contributors: Samuel East
 Donate link: https://s3bubble.com
-Tags: S3Bubble, AmazonS3, Amazon S3, HTML5 Player, Video, Popup, MediaPlayer, Lightbox, Media-Streaming, Media Streaming, VideoStreaming, Video-streaming, Video Streaming, MediaStream, Advert, Advertising
+Tags: Depreciated
 Requires at least: 2.0
 Tested up to: 4.1
 Stable tag: 0.2
